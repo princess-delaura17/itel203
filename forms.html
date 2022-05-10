@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+            <style>
+                body
+                {
+                background-image: url('download (2).jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                
+                }
+                h1
+                { 
+                    text-align: center;
+                    font-size: 30px;
+                    color: white;
+                    font-family: Castellar;
+                    margin-left: 20px;
+
+                }
+                label, span
+                {
+                    text-align: justify;
+                    text-indent: 1.5em;
+                    font-size: 20px;
+                    color: white;
+                    font-family: Courier New;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    text-indent: hanging 50%;
+
+                }
+                input, option, button
+                {
+                    text-align: justify;
+                    font-size: 20px;
+                    margin-left: 50px;
+                    font-size: 20px;
+                    color: black;
+                    font-family: Courier New;
+                    text-indent: .5em;
+                }
+                .side
+                {
+                  transform: skew(10deg); 
+                  background-color: linen; 
+                  width: 1000px; 
+                  height: 100vh; 
+                  float: right;
+                  opacity: 0.8;
+                }
+                .side h2 
+                {
+                    transform: skewX(-10deg);
+                    text-align: center;
+                    font-size: 80px;
+                    color: palevioletred;
+                    font-family: Courier New;
+                    margin-top: 280px;
+                    
+                }
+                .side h3 
+                {
+                    transform: skewX(-10deg);
+                    text-align: justify;
+                    font-size: 60px;
+                    color: palevioletred;
+                    font-family: Courier New;
+                    margin-top: 100px;
+                    
+                }
+                .top
+                {
+                  overflow: hidden;
+                  width: 100%;
+                  text-align: center;   
+                }
+                
+               
+                .out
+                {
+                     width: 500px;
+                     height: auto;
+                     border: 2px solid;
+                     margin: 5px auto;
+                     border-color: lightseagreen;
+                     opacity: 0.8;
+                     border-radius: 10px;
+                     text-align: justify;
+                     position: relative;
+                     flex: 1 0 0;
+                     margin-left: 250px;
+                     margin-top: 100px;
+                     margin-bottom: 30px;
+      
+                }
+                
+              
+              .register
+              {
+                  background-image: linear-gradient(teal, lightseagreen);
+                  width: auto;
+                  font-size: 18px;
+                  border-radius: 10px;
+                  border: 1px solid rgba(255,255,255,0.3);
+                  box-shadow: 2px, 2px, 15px rgba(0,0,0,0.3);
+                  padding: 10px;
+                  
+              }
+              p
+              {
+                    color: white;
+                    font-family: Courier New;
+                    font-size: 20px;
+                    text-align: end;
+              }
+            </style>
+    </head>
+    <body>
+   <div class="top">
+            <div class="side">       
+                <h2>“Your most unhappy customers are your most important source of learning”</h2>
+                <h3>-Bill Gates</h3>
+            </div>
+          
+     <div class="out">
+            <div class="register">
+               
+                <h1>Register Now!</h1>
+                <hr>
+                <form action="#" id="register" method="post" target="_blank">
+                    
+                        <label>Fullname</label>
+                        <input type="text" name="lname" placeholder="Lastname" required /><br>
+                        <input type="text" name="fname" placeholder="Firstname" required /><br>
+                        <input type="text" name="mname" placeholder="Middlename" required /><br>
+                    
+                        <br>
+                    
+                 
+                        <label>Email</label><br>
+                            <input type="email" name="e-mail" placeholder="Enter your email" required /><br>  
+                    
+                            <br>
+                            
+                        <div>    
+                        <label>Username</label><br>
+                        <input type="email" name="u-name" placeholder="Enter your username" required /><br>  
+                        </div>
+                            <br>
+                  
+                        <label>Password</label><br>
+		  	<input type="password"  name="pwd" placeholder="Enter Password" />
+                        <input type="password"  name="cpwd" placeholder="Confirm Password" /><br> 
+                      
+                        <br>
+                    
+                        <label>Birthday</label><br>  			
+                        <input type="date" id="birthday" name="birthday" /><br>
+                        
+                         <br>
+                        <label>Age</label> <br>
+                        <input type="number" name="age" placeholder="Age" required /> <br>
+                        
+                        <br>
+                        <label>Sex</label> <br>
+                        <input type="radio" id="html" name="sex" value="Female" />
+  		  	<label for="html">Female</label> <br>
+                  	<input type="radio" id="css" name="sex" value="Male"/>
+		  	<label for="css">Male</label> <br>
+
+                        <br>
+                    
+                            <label>Address</label> <br>
+                            <input type="text" name="street" placeholder="Street Address/No." required /> <br>
+                            <input type="text" name="city" placeholder="Municipality" required />  <br>
+                            <input type="text" name="state" placeholder="Province" required /> <br>
+                            
+                            <br>
+                            <span class>Phone Number</span>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <!-- &nbsp is for non breaking space -->
+                            
+                            <select>
+                                <option>+63</option>
+                                <option>+96</option>
+                                <option>+48</option>   
+                            </select>
+                            <br>
+                            <input type="tel" name="num" placeholder="***********" required maxlength="11" /><br>
+                        
+                            <br>
+			    <button class="btn" onclick="location.href = 'https://sharlyn-rancap-lspu.github.io/itel-203/next.html'" id="submit"> Submit</button>
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="reset" name="Reset" value="Reset" />
+                            
+                            <p><a href="https://sharlyn-rancap-lspu.github.io/itel-203/login.html">Already have an account</a></p>
+                            
+                            <hr>
+                            
+                             <span class>Prefer Language:</span>
+                             <br>
+                            <input type="checkbox"  name="translate" value="English"/>
+                            <label>English</label><br>
+                            <input type="checkbox"  name="translate" value="Filipino"/>
+                            <label>Filipino</label>
+                            
+                          
+                      
+            </form>
+            </div>
+     </div>
+   
+      </div>        
+       
+    </body>
+</html>
